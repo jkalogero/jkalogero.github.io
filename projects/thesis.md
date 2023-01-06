@@ -1,1 +1,0 @@
-Graph Neural Networks with External Knowledge for Visual Dialog
