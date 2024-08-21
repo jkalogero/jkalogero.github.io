@@ -1,2 +1,25 @@
-theme: jekyll-theme-cayman
-title: John Kalogeropoulos
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+plugins: [jekyll-paginate, jemoji]
+paginate: 2
+paginate_path: "/blog/page:num/"
+
+
+# Setup
+title:               Giannis Kalogeropoulos
+tagline:             'Personal Homepage'
+description:         ''
+url:                 http://github.com/jkalogero
+baseurl:             ''
+paginate:            2
+
+# About/contact
+author:
+  name:              Giannis Kalogeropoulos
+  url:               http://github.com/jkalogero
+  email:             tmp@gmail.com
+
+# Custom vars
+version:             1.0.0
