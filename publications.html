@@ -1,23 +1,26 @@
 <!-- publications.html -->
-<!--<div class="publications">-->
-<!--    <h3 class="publication-title"></h3>-->
-<!--    <p class="publication-authors"></p>-->
-<!--    <p class="publication-venue"></p>-->
-<!--    <a class="publication-link" href="" target="_blank">Read More</a>-->
-<!--</div>-->
-
-
 <div class="row content-summary pt-4 pb-2">
-    <div class="col-xs col-sm-9">
+    <div class="col-xs col-sm-9 my-pub">
         <p class="publication-title"></p>
         <p class="publication-authors"></p>
-        <div class="d-flex flex-row flex-wrap">
-            <p class="publication-venue"></p>
+<!--        <div class="d-flex flex-row flex-wrap">-->
+        <p class="publication-venue"></p>
+<!--        </div>-->
+        <div class="d-flex flex-row flex-wrap pub-links">
             <span>
-                <a class="publication-link btn-sm badge-button" href="" role="button">paper</a>
+                <a class="publication-link btn-sm badge-button fancy-button" target="_blank" href="" role="button">paper</a>
             </span>
+            <div class="sep">|</div>
             <span>
-                <a class="btn-sm badge-button" href="javascript:void(0)" onclick="toggleBibtex(this)"
+                <a class="publication-code btn-sm badge-button fancy-button" target="_blank" href="" role="button">code</a>
+            </span>
+            <div class="sep" id="code-sep">|</div>
+            <span>
+                <a class="publication-page btn-sm badge-button fancy-button" target="_blank" href="" role="button">page</a>
+            </span>
+            <div class="sep" id="page-sep">|</div>
+            <span>
+                <a class="btn-sm badge-button fancy-button" href="javascript:void(0)" onclick="toggleBibtex(this)"
                    role="button">bibtex</a>
             </span>
         </div>
