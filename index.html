@@ -37,44 +37,16 @@
     <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">-->
 
     <script src="scripts.js">
-        /*to prevent Firefox FOUC, this must be here*/
+    </script>
+    <script>
+        loadNavbar();
+        loadPublications();
+        loadFooter();
     </script>
 </head>
 <body>
 <div id="outer">
     <div id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom fixed-top col-11 mx-auto">
-            <div class="container-fluid">
-                <button aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler" data-bs-target="#navbarTogglerDemo03" data-bs-toggle="collapse"
-                        type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand me-auto order-0 fancy-button" href="#" id="name-item">
-                    <span id="name-text">Giannis Kalogeropoulos</span>
-<!--                    <img alt="Name" id="name-photo" src="images/navbar.jpg"-->
-<!--                         style="display:none; height: 30px; width: 30px;">-->
-                </a>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <!--    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">-->
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0 order-1">
-                        <li class="nav-item">
-                            <a class="nav-link fancy-button" href="/#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fancy-button" href="/#publications">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fancy-button" href="/experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fancy-button" href="/files/cv.pdf">CV</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </div>
 
     <div class="card col-11 mx-auto" id="main">
@@ -93,15 +65,6 @@
                                  id='portrait' src="images/photo.jpg" style="width: 300px">
                         </div>
                         <p class="h3 pt-sm-3 title-name">Giannis (Ioannis) Kalogeropoulos</p>
-
-                        <!--                        <div class="d-block d-lg-none">-->
-                        <!--                            <p class="mb-1 title-email-small"><a-->
-                        <!--                                    href="mailto:ioakalogero@di.uoa.gr">ioakalogero@di.uoa.gr</a></p>-->
-                        <!--                        </div>-->
-                        <!--                    <div class="d-none d-lg-block">-->
-                        <!--                        <p class="mb-1 title-email"><a-->
-                        <!--                                href="mailto:ioakalogero@di.uoa.gr">ioakalogero@di.uoa.gr</a></p>-->
-                        <!--                    </div>-->
 
                         <a class="fa fa-envelope ext-links" target="_blank" href="mailto:ioakalogero@di.uoa.gr"></a>
                         <a class="fa fa-github ext-links" target="_blank" href="https://github.com/jkalogero"></a>
@@ -145,8 +108,6 @@
                                 <li><span class="news-date">Sep 2023</span> <span class="news-entry"> I am starting a PhD at Archimedes Research Unit and NKUA advised by Yannis Panagakis.</span>
                                 </li>
                             </ul>
-                            <!--                    <span class="news-expand-button news-entry" id="newsExpandBtn">...show all...</span>-->
-
                         </div>
                     </div>
 
@@ -162,27 +123,9 @@
             <div id="publications_section"></div>
         </div>
     </div>
-
-    <footer class="footer-text">
-        <div class="container-fluid p-0 m-0">
-            <div class="row no-gutters text-center d-flex justify-content-center m-0">
-                <div class="p-2">
-                    <p class="text-center">© 2024 <a href="#" id="footer-name">Giannis Kalogeropoulos</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </div>
 
-
-<!--<script crossorigin="anonymous"-->
-<!--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
-<!--        src="js/jquery-3.3.1.slim.min.js"></script>-->
-<!--<script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
-<!--        src="js/umd-popper.min.js"></script>-->
-<!--<script crossorigin="anonymous" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"-->
-<!--        src="js/js-bootstrap.min.js"></script>-->
-<!--</div>-->
 </body>
 
 </html>

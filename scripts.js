@@ -68,9 +68,9 @@ function loadPublications() {
 }
 
 // Load the navbar when the page loads
-window.onload = loadPublications();
+// window.onload = loadPublications();
 // window.onload = function() {
-//     // loadNavbar();
+//     loadNavbar();
 //     loadPublications();
 // };
 
@@ -99,4 +99,20 @@ function copyBibtex(button) {
     }, function (err) {
         console.error('Could not copy BibTeX: ', err);
     });
+}
+
+function loadNavbar() {
+    fetch('/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+}
+
+function loadFooter() {
+    fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
 }
