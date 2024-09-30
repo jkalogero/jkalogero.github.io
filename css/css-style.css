@@ -152,6 +152,10 @@ a:active {
   font-family: 'Alegreya', serif;
 }
 
+.news-line{
+    padding-bottom: 0.3em;
+}
+
 .news-entry {
   font-size: 1rem;
 }
@@ -561,16 +565,15 @@ a:active {
 }
     /*vertical line*/
 .timeline2:before {
-    top: 4em;
-    bottom: 14em;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: var(--blue);
-    /*left: 21.75%;*/
-    left: 26%;
-    margin-left: -1.5px;
-    /*margin-top: 0px;*/
+    display: none;
+    /*top: 4em;*/
+    /*bottom: 14em;*/
+    /*position: absolute;*/
+    /*content: " ";*/
+    /*width: 3px;*/
+    /*background-color: var(--blue);*/
+    /*left: 26%;*/
+    /*margin-left: -1.5px;*/
 }
 /*#######################*/
 
