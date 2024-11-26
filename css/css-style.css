@@ -20,10 +20,8 @@ html {
 }
 
 body {
-  /*font-family: 'Lato', sans-serif !important;*/
-  font-family: 'Lora', serif !important;
+  font-family: 'EB Garamond', serif !important;
   background-color: var(--dark_blue) /*#333c40*/ !important; /*#444*/
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -66,7 +64,7 @@ a:active {
   color: inherit;
 }
 .about-text p {
-  /*font-size: 1.2rem;*/
+  font-size: 1.2rem;
 }
 
 .about-headshot-mobile {
@@ -74,7 +72,6 @@ a:active {
 }
 
 .title-name {
-    font-family: 'Alegreya SC', serif;
     font-size: 2.1em;
     line-height: 90%;
     font-weight:500;
@@ -92,20 +89,6 @@ a:active {
   /*background-color: #f2f2f2;*/
 }
 
-
-.link-button {
-  font-family: 'Alegreya', serif;
-  font-size: 1.5rem;
-  color: var(--blue);
-}
-
-.link-button-small {
-  font-family: 'Alegreya', serif;
-  font-size: 1.2rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  color: var(--blue);
-}
 
 .drop-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -125,12 +108,8 @@ a:active {
 }
 
 
-/* Expand/collapsible news entries */
-
 .news-title {
-  font-family: 'Alegreya', serif;
   font-size: 1.3rem;
-  font-weight: 200;
 }
 
 .expandable-list ul {
@@ -149,7 +128,6 @@ a:active {
   display: inline-block;
   font-weight: 500;
   inline-size: 4em;
-  font-family: 'Alegreya', serif;
 }
 
 .news-line{
@@ -157,7 +135,7 @@ a:active {
 }
 
 .news-entry {
-  font-size: 1rem;
+  /*font-size: 1.3rem;*/
 }
 
 .news-expand-button {
@@ -197,17 +175,19 @@ a:active {
 }
 
 .publication-title {
-  font-family: 'Alegreya', serif;
   /* font-variant: small-caps; */
-  font-size: 1.3rem;
-  font-weight:500;
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 0px;
 }
+
 .publication-authors{
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 1.2rem;
 }
 
 
@@ -222,6 +202,7 @@ a:active {
 .publication-venue {
   margin-bottom: 0;
   font-style: italic;
+  font-size: 1.2rem;
 }
 
 .badge-button {
@@ -253,15 +234,6 @@ a:active {
 }
 
 
-.full-title {
-  font-family: 'Alegreya', serif;
-  font-size: 3em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  align: center;
-}
-
 .authors-list {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -275,14 +247,6 @@ a:active {
   text-decoration: underline !important;
 }
 
-.publication-status {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 1.2em;
-  text-align: center;
-  align: center;
-  color: var(--blue);
-}
 .publication-bibtext {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -306,7 +270,6 @@ a:active {
   background-color: #f7f7f7; /* Light grey background */
   border: 1px solid #ddd; /* Light grey border */
   border-radius: 4px; /* Rounded corners */
-  font-family: Consolas, "Courier New", monospace; /* Monospace font for code */
   overflow: auto; /* Horizontal scrolling for long lines */
   white-space: pre-line; /* Ensures that data is preformatted and wraps */
   word-wrap: break-word; /* Breaks long words */
@@ -328,6 +291,7 @@ a:active {
     margin-top: 3em;
     border-radius: 1em;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    font-size: 1.2em !important;
 }
 
 
@@ -349,9 +313,9 @@ a:active {
   padding: 5px 10px;
   text-decoration: none;
   color: black;
-  /*display: inline-block;*/
   overflow: hidden;
   transition: color 0.3s ease; /* Smooth transition of text color */
+  font-size: 1.2em !important;
 }
 
 .fancy-button::after {
@@ -401,6 +365,15 @@ a:active {
   border-top-right-radius: 0.4em;
   margin: 0 !important;
 
+}
+
+/*.navbar-nav {*/
+.nav-link {
+    font-size: 1.4em !important;
+}
+
+.navbar-brand {
+    font-size: 1.4em !important;
 }
 
 .publication-bibtext {

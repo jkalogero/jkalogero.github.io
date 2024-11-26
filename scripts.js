@@ -4,6 +4,7 @@ const publicationsData = [{
         venue: "Neural Information Processing Systems, NeurIPS 2024 (Oral)",
         link: "https://arxiv.org/pdf/2406.10685",
         code: "https://github.com/jkalogero/scalegmn",
+        page: "/projects/scalegmn",
         bibtext: "@article{kalogeropoulos2024scale,\n" + "title={Scale Equivariant Graph Metanetworks},\n" + "author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},\n" + "journal={arXiv preprint arXiv:2406.10685},\n" + "year={2024}\n" + "}"
     }, {
         title: "MLOps meets edge computing: an edge platform with embedded intelligence towards 6G systems",
