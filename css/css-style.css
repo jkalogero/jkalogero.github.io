@@ -199,6 +199,13 @@ a:active {
   /*display: none;*/
 }
 
+.publication-poster {
+  /*display: none;*/
+}
+
+.publication-slides {
+  /*display: none;*/
+}
 .publication-venue {
   margin-bottom: 0;
   font-style: italic;
@@ -561,3 +568,4 @@ a:active {
     box-shadow: 0 27px 9px -11px rgba(0, 0, 0, 0.3);
 
 }
+.

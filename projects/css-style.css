@@ -72,18 +72,21 @@ body {
 }
 
 .ext-links {
-    background-color: var(--dark_blue);
+    background-color: rgba(145, 156, 174, 0.17);
+    border: 1.5px solid rgba(145, 156, 174, 0.24);
+    backdrop-filter: blur(8px);
     border-radius: 2em;
-    border: 1.5px solid transparent;
+    color: #0a0a0a !important; /* Darker text for contrast */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
     padding: 0.6em;
-    color: white !important;
     text-decoration: none;
     margin: 0.2em;
     font-size: large;
 }
 .ext-links:hover {
-    background-color: var(--white);
-    border-radius: 2em;
+    background-color: rgba(145, 156, 174, 0.05);
+    /*border-radius: 2em;*/
     border: var(--dark_blue) solid 1.5px;
     color: var(--dark_blue) !important;
     text-decoration: none;

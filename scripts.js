@@ -5,7 +5,9 @@ const publicationsData = [{
         link: "https://arxiv.org/pdf/2406.10685",
         code: "https://github.com/jkalogero/scalegmn",
         page: "/projects/scalegmn",
-        bibtext: "@article{kalogeropoulos2024scale,\n" + "title={Scale Equivariant Graph Metanetworks},\n" + "author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},\n" + "journal={arXiv preprint arXiv:2406.10685},\n" + "year={2024}\n" + "}"
+        poster: "/projects/scalegmn/poster.pdf",
+        slides: "/projects/scalegmn/slides.pdf",
+        bibtext: "@article{kalogeropoulos2024scale,\n" + "title={Scale Equivariant Graph Metanetworks},\n" + "author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},\n" + "journal={Advances in neural information processing systems (NeurIPS)},\n" + "year={2024}\n" + "}"
     }, {
         title: "MLOps meets edge computing: an edge platform with embedded intelligence towards 6G systems",
         authors: "Nikos Psaromanolakis, Vasileios Theodorou, Dimitris Laskaratos, Ioannis Kalogeropoulos, Maria-Eleftheria Vlontzou, Eleni Zarogianni, Georgios Samaras",
@@ -60,6 +62,20 @@ function loadPublications() {
                 else {
                     pubElement.querySelector('.publication-page').style.display = 'none';
                     pubElement.querySelector('#page-sep').style.display = 'none';
+                }
+                if (pub.poster) {
+                    pubElement.querySelector('.publication-poster').href = pub.poster;
+                }
+                else {
+                    pubElement.querySelector('.publication-poster').style.display = 'none';
+                    pubElement.querySelector('#poster-sep').style.display = 'none';
+                }
+                if (pub.slides) {
+                    pubElement.querySelector('.publication-slides').href = pub.slides;
+                }
+                else {
+                    pubElement.querySelector('.publication-slides').style.display = 'none';
+                    pubElement.querySelector('#slides-sep').style.display = 'none';
                 }
 
                 publicationsContainer.appendChild(pubElement);

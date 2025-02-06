@@ -42,7 +42,6 @@
 
 
     <script>
-        // loadNavbar();
         loadFooter();
     </script>
 </head>
@@ -63,10 +62,10 @@
         <div class="venue-name">NeurIPS 2024 (Oral)</div>
         <div class="links">
             <span class="link-container">
-                <a class="ext-links" href="https://neurips.cc/virtual/2024/poster/96382">
+                <a class="ext-links" href="https://neurips.cc/virtual/2024/oral/97993">
                   <span class="icon">
-                      <img alt="NeurIPS Logo" src="https://neurips.cc/static/core/img/NeurIPS-logo.svg"
-                           style="width: 35px">
+                      <img alt="NeurIPS Logo" src="https://neurips.cc/static/core/img/NIPS-logo.svg"
+                           style="width: 45px">
                   </span>
                   <span>NeurIPS 2024</span>
                 </a>
@@ -85,6 +84,22 @@
                       <i class="fa fa-github"></i>
                   </span>
                   <span>Code</span>
+                </a>
+              </span>
+            <span class="link-container">
+                <a class="ext-links" href="poster.pdf">
+                  <span class="icon">
+                      <i class="fa fa-file"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+            <span class="link-container">
+                <a class="ext-links" href="slides.pdf">
+                  <span class="icon">
+                      <i class="fa fa-film"></i>
+                  </span>
+                  <span>Slides</span>
                 </a>
               </span>
 
@@ -125,25 +140,30 @@
                 </div>
 
                 <p>Directly operating on the parameters of neural networks, paves the way to a whole new spectrum of
-                exciting applications.
-                From analysis and intepretation of trained NNs to editing or even generating neural networks.
-                Illustratively, we could apply domain adaptation to trained models by directly
-                operating on their parameters
-                or have models that outperform classic optimization algorithms in a learned optimization setting.
-                Furthermore, with the advent of Implicit Neural Representations, trained NN parameters are
-                increasingly used to
-                represent datapoint signals, such as images or 3D shapes, replacing raw
-                representations, i.e., pixel grids or point clouds. Consequently, many tasks involving such
-                data, across various domains such as computer vision and physics, which are currently tackled
-                using domain-specific architectures (e.g. CNNs for grids, PointNets or GNNs for point
-                clouds and meshes), could potentially be solved by <i>NNs that process the parameters of other
-                    NNs.</i></p>
-                <div class="full-width">Neural networks, however, have symmetries, i.e. there exist a few transformations
+                    exciting applications.
+                    From analysis and intepretation of trained NNs to editing or even generating neural networks.
+                    Illustratively, we could apply domain adaptation to trained models by directly
+                    operating on their parameters
+                    or have models that outperform classic optimization algorithms in a learned optimization setting.
+                    Furthermore, with the advent of Implicit Neural Representations, trained NN parameters are
+                    increasingly used to
+                    represent datapoint signals, such as images or 3D shapes, replacing raw
+                    representations, i.e., pixel grids or point clouds. Consequently, many tasks involving such
+                    data, across various domains such as computer vision and physics, which are currently tackled
+                    using domain-specific architectures (e.g. CNNs for grids, PointNets or GNNs for point
+                    clouds and meshes), could potentially be solved by <i>NNs that process the parameters of other
+                        NNs.</i></p>
+                <div class="full-width">Neural networks, however, have symmetries, i.e. there exist a few
+                    transformations
                     that when applied to the parameters of the model leave the underlying function intact:
-                <ul>
-                <li><strong>Permutation</strong> symmetries: Hidden neurons do not possess any inherent ordering.</li>
-                <li><strong>Scaling</strong> symmetries: Activation functions have inherent symmetries bestowed to the NN.</li>
-                </ul>
+                    <ul>
+                        <li><strong>Permutation</strong> symmetries: Hidden neurons do not possess any inherent
+                            ordering.
+                        </li>
+                        <li><strong>Scaling</strong> symmetries: Activation functions have inherent symmetries bestowed
+                            to the NN.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="row gif-collection">
@@ -165,37 +185,10 @@
                     After mapping the input NN to a graph and applying a proper initialization method, we feed the
                     result to a Graph Neural Network.
                     Since GNN layers are by construction permutation equivariant, we only need to <i>extend the MPNN
-                    paradigm to account for the scaling symmetries</i>. For this scope we design <strong>scale equivariant MSG and
+                        paradigm to account for the scaling symmetries</i>. For this scope we design <strong>scale
+                        equivariant MSG and
                         UPD functions</strong> and a <strong>permutation and scale invariant READOUT function</strong>.
                 </p>
-
-
-
-
-
-                <!--                <ol>-->
-                <!--                    <li><strong>Scale Invariant</strong>-->
-                <!--                        <div class="gif-container">-->
-                <!--                            <img class="img-fluid center-block sym-gif" src="figs/scale_inv.gif" style="width: 42em">-->
-                <!--                        </div>-->
-                <!--                    </li>-->
-                <!--                    <li><strong>Scale Equivariant</strong>-->
-                <!--                        <div class="gif-container">-->
-                <!--                            <img class="img-fluid center-block sym-gif" src="figs/scale_eq.png" style="width: 42em">-->
-                <!--                        </div>-->
-                <!--                    </li>-->
-                <!--                    <li><strong>ReScale Equivariant</strong>-->
-                <!--                        <div class="gif-container">-->
-                <!--                            <img class="img-fluid center-block sym-gif" src="figs/rescale_eq.png" style="width: 42em">-->
-                <!--                        </div>-->
-                <!--                    </li>-->
-                <!--                </ol>-->
-                <!--                <div class="section-title">-->
-                <!--                    <h2>Experiments</h2>-->
-                <!--                </div>-->
-                <!--                <div class="subsection-title">-->
-                <!--                    <h4>INR Classification</h4>-->
-                <!--                </div>-->
                 <div class="section-title">
                     <h2>Paper</h2>
                 </div>
@@ -212,7 +205,7 @@
                         <pre class="pup_bibtext">@article{kalogeropoulos2024scale,
 title={Scale Equivariant Graph Metanetworks},
 author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},
-journal={arXiv preprint arXiv:2406.10685},
+journal={Advances in neural information processing systems (NeurIPS)},
 year={2024}
 }</pre>
                     <a class="btn-sm badge-button" href="javascript:void(0)"
