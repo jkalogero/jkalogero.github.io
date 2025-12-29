@@ -1,4 +1,10 @@
 const publicationsData = [{
+        title: "Metanetworks as Regulatory Operators: Learning to Edit for Requirement Compliance",
+        authors: "Ioannis Kalogeropoulos, Giorgos Bouritsas, Yannis Panagakis",
+        venue: "",
+        link: "https://arxiv.org/pdf/2512.15469",
+        bibtext: "@article{kalogeropoulos2025metanetworks,\n" + "title={Metanetworks as Regulatory Operators: Learning to Edit for Requirement Compliance},\n" + "author={Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},\n" + "journal={arXiv preprint arXiv:2512.15469},\n" + "year={2025}\n" + "}"
+    }, {
         title: "Scale Equivariant Graph Metanetworks",
         authors: "Ioannis Kalogeropoulos*, Giorgos Bouritsas*, Yannis Panagakis",
         venue: "Neural Information Processing Systems, NeurIPS 2024 (Oral)",
